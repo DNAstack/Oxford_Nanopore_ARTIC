@@ -1,0 +1,9 @@
+{
+  "run_artic.accession": "String",
+  "run_artic.fastqs": "Array[File]",
+  "run_artic.primer_version": "String",
+  "run_artic.min_length": 400,
+  "run_artic.max_length": 700,
+  "run_artic.min_reads": "Int",
+  "run_artic.container_registry": "dnastack"
+}
