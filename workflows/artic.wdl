@@ -170,7 +170,7 @@ task artic {
 	}
 
 	runtime {
-		docker: "~{container_registry}/artic:8af5152"
+		docker: "~{container_registry}/artic:0.0.1"
 		cpu: threads
 		memory: "7.5 GB"
 		disks: "local disk 200 HDD"
