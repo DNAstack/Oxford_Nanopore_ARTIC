@@ -116,7 +116,7 @@ task artic {
 		chrom_line=$(bcftools view -h ~{accession}.pass.vcf.gz | tail -1)
 		echo "SAMPLE ~{accession}" > new_samplename.txt
 		bcftools view --no-version -h ~{accession}.pass.vcf.gz | sed '$ d' > header.txt
-		echo -e "##processing_pipeline=https://github.com/connor-lab/ncov2019-artic-nf/tree/$ARTIC_VERSION\n$chrom_line" >> header.txt
+		echo -e "##processing_pipeline=https://github.com/connor-lab/ncov2019-artic-nf/tree/v$ARTIC_VERSION\n$chrom_line" >> header.txt
 		bcftools reheader \
 			-h header.txt \
 			-s new_samplename.txt \
@@ -170,7 +170,7 @@ task artic {
 	}
 
 	runtime {
-		docker: "~{container_registry}/artic:8af5152"
+		docker: "~{container_registry}/artic:1.3.0"
 		cpu: threads
 		memory: "7.5 GB"
 		disks: "local disk 200 HDD"
