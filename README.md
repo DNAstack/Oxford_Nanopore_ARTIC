@@ -1,5 +1,4 @@
-# Oxford Nanopore SARS-CoV-2 data processing using the [ARTIC 
-pipeline](https://artic.network/ncov-2019/ncov2019-bioinformatics-sop.html)
+# Oxford Nanopore SARS-CoV-2 data processing using the [ARTIC pipeline](https://artic.network/ncov-2019/ncov2019-bioinformatics-sop.html)
 
 This repository provides a WDL wrapper for running the [Connor lab's implementation](https://github.com/connor-lab/ncov2019-artic-nf) of the [ARTIC pipeline](https://artic.network/ncov-2019/ncov2019-bioinformatics-sop.html) to process Oxford Nanopore single-ended SARS-CoV-2 sequencing data.
 
